@@ -2,8 +2,6 @@ let args = process.argv;
 // console.log(args[2]);
 
 const diceRoller = function (numberOfRolls) {
-  // console.log(numberOfRolls);
-  // console.log(numberOfRolls);
   let answer;
   let array = [];
   for (let i = 0; i < numberOfRolls; i++) {
