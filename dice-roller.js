@@ -5,12 +5,18 @@ const diceRoller = function (numberOfRolls) {
   // console.log(numberOfRolls);
   // console.log(numberOfRolls);
   let answer;
+  let array = [];
   for (let i = 0; i < numberOfRolls; i++) {
-    answer = Math.floor(Math.random() * Math.floor(6));
-    console.log(answer);
+    answer = Math.floor(Math.random() * 6) + 1;
+    // console.log(answer);
+
+    array.push(answer);
   }
 
-  return answer;
+  let ans = array.join(" ");
+
+  console.log(ans);
+  return ans;
 };
 
 diceRoller(args[2]);
