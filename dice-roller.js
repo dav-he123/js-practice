@@ -7,13 +7,12 @@ const diceRoller = function (numberOfRolls) {
   for (let i = 0; i < numberOfRolls; i++) {
     answer = Math.floor(Math.random() * 6) + 1;
     // console.log(answer);
-
     array.push(answer);
   }
 
   let ans = array.join(" ");
 
-  console.log(ans);
+  console.log(`Rolled ${numberOfRolls} dice: ${ans}`);
   return ans;
 };
 
