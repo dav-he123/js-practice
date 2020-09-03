@@ -14,6 +14,10 @@
 
 const joinList = function (list) {
   console.log(list);
+
+  let answer = list.join(", ");
+
+  return answer;
 };
 
 // Test / Driver Code below...
