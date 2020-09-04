@@ -1,7 +1,7 @@
 const printInFrame = function (list) {
   let lister = list.split(" ");
   console.log(lister);
-  const longest = longestStr(lister).length;
+  const longest = longestStr(lister);
   // const longest = longestStr(lister).length;
 
   const border = repeat("*", longest);
@@ -15,13 +15,14 @@ const printInFrame = function (list) {
 
 const repeat = function (str, times) {
   let result = str;
+  let ans = " ";
   // let result = " ";
 
   for (let i = 0; i < times; i++) {
-    result += str;
+    ans += result;
   }
 
-  return result;
+  return ans;
 };
 
 // const longestStr = function (listAns) {
