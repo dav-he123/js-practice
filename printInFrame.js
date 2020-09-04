@@ -1,6 +1,9 @@
 const printInFrame = function (list) {
   let lister = list.split(" ");
+  console.log(lister);
   const longest = longestStr(lister).length;
+  // const longest = longestStr(lister).length;
+
   const border = repeat("*", longest);
 
   console.log(border);
@@ -12,6 +15,7 @@ const printInFrame = function (list) {
 
 const repeat = function (str, times) {
   let result = str;
+  // let result = " ";
 
   for (let i = 0; i < times; i++) {
     result += str;
@@ -20,14 +24,26 @@ const repeat = function (str, times) {
   return result;
 };
 
+// const longestStr = function (listAns) {
+//   // let longest = listAns[0];
+//   let longest;
+//   // console.log(longest);
+
+//   for (const str of listAns) {
+//     longest = str;
+//   }
+
+//   return longest;
+// };
+
 const longestStr = function (listAns) {
-  let longest = listAns[0];
-
-  for (const str of listAns) {
-    longest = str;
+  let longestWord = 0;
+  for (let i = 0; i < listAns.length; i++) {
+    if (listAns[i].length > longestWord) {
+      longestWord = listAns[i].length;
+    }
   }
-
-  return longest;
+  return longestWord;
 };
 
 // Test driver code, do not modify
