@@ -3,15 +3,10 @@ const isPalindrome = function (str) {
   const noSpaces = str.split(" ").join("");
   const midIndex = Math.floor(noSpaces.length / 2);
   const lastIndex = str.length - 1;
-  // console.log(lastIndex);
-  // console.log(midIndex);
-  // console.log(noSpaces);
-  // console.log(lastIndex);
 
   if (str.length === 1) {
     return true;
   }
-  // console.log(midIndex);
 
   for (let i = 0; i < midIndex; i++) {
     if (str[i] !== str[lastIndex - i]) {
