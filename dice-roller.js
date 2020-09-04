@@ -12,8 +12,10 @@ const diceRoller = function (numberOfRolls) {
 
   let ans = array.join(" ");
 
-  console.log(`Rolled ${numberOfRolls} dice: ${ans}`);
+  // console.log(`Rolled ${numberOfRolls} dice: ${ans}`);
   return ans;
 };
 
 diceRoller(args[2]);
+
+console.log(`Rolled ${args[2]} dice: ${diceRoller(args[2])}`);
