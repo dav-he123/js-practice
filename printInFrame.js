@@ -6,16 +6,16 @@ const printInFrame = function (list) {
 
   const border = repeat("*", longest);
 
-  console.log(border);
+  console.log(border + "*" + "*" + "*" + "*");
   for (const word of lister) {
     console.log(`* ${word}${repeat(" ", longest - word.length + 1)}*`);
   }
-  console.log(border);
+  console.log(border + "*" + "*" + "*" + "*");
 };
 
 const repeat = function (str, times) {
   let result = str;
-  let ans = " ";
+  let ans = "";
   // let result = " ";
 
   for (let i = 0; i < times; i++) {
